@@ -4,10 +4,18 @@ gem 'rails', '4.1.1'
 
 gem 'bcrypt', '3.1.7'
 gem 'jbuilder', '2.0'
-gem 'pg', '0.18.1'
+# gem 'pg', '0.18.1'
 gem 'settingslogic', '2.0.9'
-gem 'thin', '1.6.3'
+# gem 'thin', '1.6.3'
 
+gem 'itunes-search-api'
+gem 'mysql2'
+gem 'whenever', :require => false
+gem 'kaminari'
+# gem 'pusher'
+gem 'puma'
+gem 'jquery-rails'
+gem 'devise'
 group :doc do
   gem 'sdoc', '0.4.0'
 end

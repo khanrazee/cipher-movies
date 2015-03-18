@@ -1,0 +1,11 @@
+<%= @user.errors.full_messages if @user.errors.present?%>
+
+<%= form_for @user do |f|  %>
+    <h5>User Name <p id="web-url" style="color:#7cbc20;"></p></h5>
+    <%= f.text_field :name ,:placeholder => "Your name" %>
+    <%= f.email_field :email ,:placeholder => "Your Email" %>
+    <%= f.password_field :password ,:placeholder => "Password, At l" %>
+    <%= f.password_field :password_confirmation ,:placeholder => "Password Confirmation" %>
+    <%= f.submit :value =>"Confirm"%>
+
+<%end%>

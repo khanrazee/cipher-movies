@@ -1,0 +1,16 @@
+<h1>Search Term</h1>
+
+<form action="<%=search_users_path%>" method="GET">
+  <input type="text" name="term" required placeholder="Search Here"/>
+  <input type="submit" value="Search"/>
+</form>
+
+
+
+<%@results.each do |r|%>
+<%=r[:trackName]%><br/>
+    <%=image_tag r[:artworkUrl100] if r[:artworkUrl100].present?%>
+    S-Desc: <%=r[:shortDescription]%><br/>
+    Desc: <%=r[:longDescription]%><br/>
+    Price: <%=r[:collectionPrice]%>
+<%end if @results.present?%>
